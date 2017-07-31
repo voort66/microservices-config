@@ -5,3 +5,14 @@ eureka:
     client:
         serviceUrl:
              defaultZone: http://localhost:8761/eureka/
+
+
+zuul:
+  debug:
+    request: true
+  routes:
+    card-service:
+        path: /user-service/**
+        serviceId: user-service
+        stripPrefix: true
+    
