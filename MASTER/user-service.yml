@@ -43,8 +43,8 @@ config:
 
 
                 # openssl rsa -in jwt.pem -pubout
-        publicKey: |
-    	        -----BEGIN PUBLIC KEY-----
+        publicKey:
+                -----BEGIN PUBLIC KEY-----
                 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0wnuxqAUrut1oY/A1LGo
                 tZyIV7Bn91GbVgHJ9twMjck9aWPNH0hUh+2Rzk0raHwiEgCGxU+sNiu5pXcvHzPl
                 Mds8J9CO5n7zVKmngKA05jQuLaH0Tu/0AwGSGLpPlg0OXRjr/ADwYip6Sr7J/agd
