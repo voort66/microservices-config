@@ -16,7 +16,7 @@ zuul:
   debug:
     request: true
   routes:
-    user-service:
+    uaa:
       sensitiveHeaders:
       path: /uaa/**
       stripPrefix: false
@@ -30,7 +30,7 @@ security:
     sso:
       loginPath: /login
     client:
-      accessTokenUri: http://localhost:${server.port}/user-service/oauth/token
+      accessTokenUri: http://localhost:${server.port}/uaa/oauth/token
       userAuthorizationUri: /oauth/authorize
       clientId: acme
       clientSecret: acmesecret
