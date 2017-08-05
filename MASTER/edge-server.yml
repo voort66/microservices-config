@@ -19,7 +19,7 @@ zuul:
     user-service:
       sensitiveHeaders:
       path: /uaa/**
-    stripPrefix: false
+      stripPrefix: false
   add-proxy-headers: true
   
 security:
