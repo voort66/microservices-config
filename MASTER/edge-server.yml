@@ -28,10 +28,10 @@ security:
     enabled: false
   oauth2:
     sso:
-      loginPath: /login
+      loginPath: /uua/login
     client:
       accessTokenUri: http://localhost:${server.port}/uaa/oauth/token
-      userAuthorizationUri: /oauth/authorize
+      userAuthorizationUri: /uua/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
     resource:
