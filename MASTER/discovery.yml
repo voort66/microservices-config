@@ -1,6 +1,9 @@
+spring:
+    application:
+        name: discovery
+
 server:
     port: 8761
-    context-path: /discovery
 
 spring:
     redis:
@@ -12,7 +15,6 @@ spring:
 eureka:
     instance:
         hostname: localhost
-        
     client:
         registerWithEureka: false
         fetchRegistry: false
