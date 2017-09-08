@@ -1,14 +1,12 @@
 spring:
     application:
         name: discovery
-
-server:
-    port: 8761
-
-spring:
     redis:
         host: localhost
         port: 6379
+
+server:
+    port: 8761
  
 # Defines the Eureka server that is used by the Netflix OSS components to use as the registry
 # for server discovery
