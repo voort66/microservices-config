@@ -15,10 +15,10 @@ eureka:
         
 zuul:
   routes: 
-    uaa-service:
+    uaa:
       sensitiveHeaders: Set-Cookie,Authorization
       path: /uaa/**
-    discovery-service:
+    discovery:
       sensitiveHeaders: Set-Cookie,Authorization
       path: /discovery/**
       url: http://localhost:8761
@@ -30,7 +30,7 @@ management:
 
 hystrix:
   command:
-      uaa-service:
+      uaa:
           execution:
               isolation:
                   thread:
