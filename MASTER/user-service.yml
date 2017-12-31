@@ -7,20 +7,28 @@ eureka:
         region: default
         registryFetchIntervalSeconds: 5
 
-
+pocketmoney:
+    database: hsqldb
+        
 spring:
     application:
-        name: uaa
-    redis:
-        host: localhost
-        port: 6379
+        name: user-service
+    datasource:
+        schema: classpath*:db/${pocketmoney.database}/schema.sql
+        data: classpath*:db/${pocketmoney.database}/data.sql
+    jpa:
+        hibernate:
+            ddl-auto: non
 
-
+            
 management:
     security:
-        sessions: never
-
+        enabled: false
+            
 logging:
-  level.org.springframework.security: DEBUG
+    level:
+        org:
+            springframework:INFO
+               
 
 
