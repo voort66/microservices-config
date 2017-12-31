@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: discovery
+server:
+    port: 8082
+ 
+# Defines the Eureka server that is used by the Netflix OSS components to use as the registry
+# for server discovery
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://discUser:discPassword@${eureka.instance.hostname}:${server.port}/eureka/
+    
+
+
+
+#spring.redis.host=localhost
+#spring.redis.port=6379
