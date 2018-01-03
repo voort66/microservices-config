@@ -17,7 +17,7 @@ eureka:
         registerWithEureka: false
         fetchRegistry: false
         serviceUrl:
-            defaultZone: http://discUser:discPassword@${eureka.instance.hostname}:${server.port}/eureka/
+            defaultZone: http://discUser:discPassword@locahost:8761/eureka/
     
 
     
