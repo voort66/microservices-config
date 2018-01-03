@@ -1,6 +1,10 @@
 spring:
     application:
         name: discovery
+    redis:
+        host: localhost
+        port: 6379
+
 server:
     port: 8761
  
@@ -16,9 +20,4 @@ eureka:
             defaultZone: http://discUser:discPassword@${eureka.instance.hostname}:${server.port}/eureka/
     
 
-
-
-spring:
-    redis:
-        host: localhost
-        port: 6379
+    
