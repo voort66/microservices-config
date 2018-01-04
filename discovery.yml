@@ -14,6 +14,8 @@ eureka:
     instance:
         hostname: localhost
     client:
+        region: default
+        registryFetchIntervalSeconds: 5
         registerWithEureka: false
         fetchRegistry: false
         serviceUrl:
