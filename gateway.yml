@@ -35,4 +35,6 @@ hystrix:
                         timeoutInMilliseconds: 600000
  
  
-management.security.sessions :always
+management:
+    security:
+        sessions :always
