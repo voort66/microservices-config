@@ -23,11 +23,22 @@ zuul:
         discovery:
             path: /discovery/**
             sensitive-headers: Set-Cookie,Authorization
-            url: http://localhost:8761/api/discovery/
-            
+            url: http://localhost:8761/  
+        users:
+            path: /users/**
+            sensitive-headers: Set-Cookie,Authorization
+            url: http://localhost:8081/  
+
+
+           
 hystrix:
     command:
         discovery:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 600000
+        users:
             execution:
                 isolation:
                     thread:
